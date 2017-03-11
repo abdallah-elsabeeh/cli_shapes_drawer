@@ -1,0 +1,19 @@
+{
+    "name": "vendor/lamsa",
+    "description": "Description of project lamsa.",
+    "authors": [
+        {
+            "name": "abdallah elsabeeh",
+            "email": "zaxx44a7@gmail.com"
+        }
+    ],
+    "autoload": 
+            {
+                "psr-4": 
+                        {
+                            "engines\\": "src/engines/",
+                            "models\\": "src/models/",
+                            "core\\": "src/core/"
+                        }
+            }
+}

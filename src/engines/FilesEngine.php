@@ -22,12 +22,27 @@ class FilesEngine extends file
         $this->__ehConstruct();
     }
 
-    public static function json($data, string $filename, string $location = null)
+    public static function json($data, string $filename)
     {
         if (parent::nameValidation($filename)) {
             throw new \Exception("File name is not vaild");
         }
         $json_data = json_encode($data);
-        file_put_contents($filename.'.  json', $json_data);
+        file_put_contents(parent::LOCATION . $filename . '.json', $json_data);
+        if (parent::isExist($filename . '.json')) {
+            echo 'File updated';
+        } else {
+          echo 'File created';  
+        }
+    }
+
+    public static function xml($data, string $filename, string $location = null)
+    {
+        //TODO:
+    }
+
+    public static function html($data, string $filename, string $location = null)
+    {
+        //TODO:   
     }
 }

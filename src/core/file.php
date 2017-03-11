@@ -12,6 +12,7 @@ class file
 
     //FIXME : add extensions
     const REG = '/[^A-Za-z0-9 _ .-]/';
+    const LOCATION = '../src/engines/exported/';
 
     public static function nameValidation($name)
     {
@@ -19,13 +20,13 @@ class file
     }
 
     //TODO:
-    public static function move()
+    public static function move($file, $location)
     {
         
     }
 
     //TODO:
-    public static function remove()
+    public static function remove($file, $location)
     {
         
     }
@@ -34,5 +35,10 @@ class file
     public static function rename()
     {
         
+    }
+
+    public static function isExist($file)
+    {
+        return file_exists(self::LOCATION . '/' . $file);
     }
 }

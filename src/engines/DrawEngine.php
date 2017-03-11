@@ -42,13 +42,13 @@ class DrawEngine
     public function draw($shape, $target = 'cli', $file_name = null)
     {
         if ($target != 'cli' && $file_name == null) {
-             throw new \Exception("no file sellected match");
+            throw new \Exception("no file sellected match");
         } elseif ($target === 'cli') {
             foreach ($shape->getShapeArray() as $line) {
                 echo $line[0] . "\n";
             }
         } elseif ($target === 'json') {
-            echo FilesEngine::json($shape->getShapeArray(), $file_name);
+            FilesEngine::json($shape->getShapeArray(), $file_name);
         } elseif ($target === 'xml') {
             
         } elseif ($target === 'html') {

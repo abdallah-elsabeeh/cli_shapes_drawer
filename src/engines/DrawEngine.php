@@ -39,7 +39,7 @@ class DrawEngine
      * @param string target can be on of the following [cli,json,xml,html]
      * @return bool whether there is any handler attached to the event.
      */
-    public function draw($shape, $target = 'cli', $file_name = null)
+    public function draw(\core\model $shape, $target = 'cli', $file_name = null)
     {
         if ($target != 'cli' && $file_name == null) {
             throw new \Exception("no file sellected match");

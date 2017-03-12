@@ -7,6 +7,6 @@ $tree = new Tree();
 $tree->setHight(5)->setRepetition(2);
 $engine = new DrawEngine();
 //create json file
-//$engine->draw($tree,'json','test');
+$engine->draw($tree,'json','test');
 //draw to cli
-$engine->draw($tree);
+//$engine->draw($tree);

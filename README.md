@@ -10,7 +10,7 @@ optional
 
 Installation
 ------------
-- clone the project to your machen 
+- clone the project to your machin 
 - composer dump-autoload 
 - composer update to use phpunit Testing
 
@@ -25,9 +25,9 @@ Contributing
 ### Directory Structure
 
 ```
-src/               pass file for the project
+src/               project root folder
 -- core/           
 -- engines/
 -- models/
-tests/                unitTesting folder
+tests/             unit Testing folder
 ```
